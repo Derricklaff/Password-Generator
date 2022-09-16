@@ -31,7 +31,7 @@ function generatePassword() {
   console.log(newCriteria);
 
   passW = ""
-  for (i = 0; i <= length; i++) {
+  for (i = 0; i < length; i++) {
     newChar = newCriteria[Math.floor(Math.random() * newCriteria.length)];
     passW = passW.concat(newChar);
   }
