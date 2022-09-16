@@ -17,7 +17,7 @@ n/a
 n/a
 ## Usage
 
-![SCREENSHOT](Assets/images/Password-generator-sreenshot.jpg)
+[SCREENSHOT](Assets/images/Password-generator-sreenshot.jpg)
 
 [GITHUB](https://github.com/Derricklaff/Password-Generator)
 
