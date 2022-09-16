@@ -20,15 +20,22 @@ function generatePassword() {
   }
 
   let criteriaSelect = [lowercase, uppercase, numeric, specialChar];
-  const newCriteria = [];
+  let newCriteria = [];
 
   for (i = 0; i < criteria.length; i++) {
     if (criteriaSelect[i]) {
-      newCriteria.push(criteria[i]);
+      newCriteria = newCriteria.concat(criteria[i]);
     }
   }
 
   console.log(newCriteria);
+
+  passW = ""
+  for (i = 0; i <= length; i++) {
+    newChar = newCriteria[Math.floor(Math.random() * newCriteria.length)];
+    passW = passW.concat(newChar);
+  }
+  return passW;
 }
 
 // Write password to the #password input
@@ -42,6 +49,3 @@ function writePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-generatePassword()
