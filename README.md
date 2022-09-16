@@ -19,9 +19,9 @@ n/a
 
 ![SCREENSHOT](Assets/images/Password-generator-sreenshot.jpg)
 
-![GITHUB](https://github.com/Derricklaff/Password-Generator)
+[GITHUB](https://github.com/Derricklaff/Password-Generator)
 
-![DEPLOYED-SITE](https://derricklaff.github.io/Password-Generator/)
+[DEPLOYED-SITE](https://derricklaff.github.io/Password-Generator/)
 ## Credits
 
 List your collaborators, if any, with links to their GitHub profiles.
