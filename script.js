@@ -4,7 +4,7 @@ const lowerAlph = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', '
 const upperAlph = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 const specialCha = ['!', '@', '%', '&', '#', '^', '/',];
 const num = ['1', '2', '3', '4', '5', '6', '7', '8', '9',];
-const nestedArray = [lowerAlph, upperAlph, specialCha, num];
+const criteria = [lowerAlph, upperAlph, specialCha, num];
 
 
 function generatePassword() {
@@ -18,20 +18,19 @@ function generatePassword() {
     numeric = confirm("would you like numbers in the password?");
     specialChar = confirm("Would you like to have special characters in the password?");
   }
-  passw = ""
-  for (i = 0; i <= length; i++) {
-    newChar = nestedArray[Math.floor(Math.random) * 3]
-    if (newChar = lowerAlph) {
 
-    } else if (newChar = upperAlph) {
+  let criteriaSelect = [lowercase, uppercase, numeric, specialChar];
+  const newCriteria = [];
 
-    } else if (newChar = num) {
-
-    } else if (newChar = specialCha) {
-
+  for (i = 0; i < criteria.length; i++) {
+    if (criteriaSelect[i]) {
+      newCriteria.push(criteria[i]);
     }
   }
+
+  console.log(newCriteria);
 }
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
@@ -46,5 +45,3 @@ generateBtn.addEventListener("click", writePassword);
 
 
 generatePassword()
-
-console.log( var = casd math.floor(math.random()) * length.length; password += nestedArray.substring(randomNumber, randomNumber + 1));
