@@ -4,7 +4,7 @@ const lowerAlph = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', '
 const upperAlph = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
 const specialCha = ['!', '@', '%', '&', '#', '^', '/',];
 const num = ['1', '2', '3', '4', '5', '6', '7', '8', '9',];
-const criteria = [lowerAlph, upperAlph, specialCha, num];
+const criteria = [lowerAlph, upperAlph, num, specialCha];
 
 
 function generatePassword() {
@@ -22,7 +22,7 @@ function generatePassword() {
   let criteriaSelect = [lowercase, uppercase, numeric, specialChar];
   let newCriteria = [];
 
-  for (i = 0; i < criteria.length; i++) {
+  for (i = 0; i < criteriaSelect.length; i++) {
     if (criteriaSelect[i]) {
       newCriteria = newCriteria.concat(criteria[i]);
     }
